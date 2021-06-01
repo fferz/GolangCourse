@@ -3,7 +3,8 @@ package main
 import (
 	//"github.com/fferz/GolangCourse/pkg/pointers"
 	//section5 "github.com/fferz/GolangCourse/pkg/section-5"
-	section6 "github.com/fferz/GolangCourse/pkg/section-6-control-flow"
+	//section6 "github.com/fferz/GolangCourse/pkg/section-6-control-flow"
+	section7 "github.com/fferz/GolangCourse/pkg/section-7-grouping-data"
 )
 
 func main() {
@@ -22,6 +23,10 @@ func main() {
 	//section6.Exercise1()
 	//section6.IfStatement()
 	//section6.Exercise2()
-	section6.SwitchStatement()
+	//section6.SwitchStatement()
+
+	//section7.Arrays()
+	//section7.Slices()
+	section7.Maps()
 
 }
