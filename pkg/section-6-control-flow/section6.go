@@ -124,6 +124,53 @@ func SwitchStatement() {
 	&& = and
 	|| = or
 	! = not
-
-
 */
+
+func Exercise3() {
+	// print every number  from 1 to 10
+	for i := 1; i <= 10; i++ {
+		fmt.Println(i)
+	}
+}
+
+func Exercise4() {
+	// print every rune code of the uppercase alphabet three times
+	for i := 65; i <= 90; i++ {
+		fmt.Println("\n", i)
+		for j := 1; j <= 3; j++ {
+			fmt.Printf("\t%#U\n", i)
+		}
+	}
+}
+
+func Exercise5() {
+	// print all the years you've been alive
+	x := 1989
+	for x >= 1989 {
+		if x < 2021 {
+			fmt.Println(x)
+			x++
+		}
+		return
+	}
+}
+
+func Exercise6() {
+	// print all the years you've been alive
+	x := 1989
+	for {
+		if x >= 1989 && x <= 2020 {
+			fmt.Println(x)
+			x++
+		} else {
+			break
+		}
+	}
+}
+
+func Exercise7() {
+	// print out the remainder (modulus) for 10 to 100, divided by 4
+	for i := 10; i <= 100; i++ {
+		fmt.Println(i % 4)
+	}
+}

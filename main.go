@@ -6,7 +6,7 @@ import (
 	//section6 "github.com/fferz/GolangCourse/pkg/section-6-control-flow"
 	//section7 "github.com/fferz/GolangCourse/pkg/section-7-grouping-data"
 	//section8 "github.com/fferz/GolangCourse/pkg/section-8-struct"
-	section9 "github.com/fferz/GolangCourse/pkg/section-9-functions"
+	section6 "github.com/fferz/GolangCourse/pkg/section-6-control-flow"
 )
 
 func main() {
@@ -26,6 +26,11 @@ func main() {
 	//section6.IfStatement()
 	//section6.Exercise2()
 	//section6.SwitchStatement()
+	//section6.Exercise3()
+	//section6.Exercise4()
+	//section6.Exercise5()
+	//section6.Exercise6()
+	section6.Exercise7()
 
 	//section7.Arrays()
 	//section7.Slices()
@@ -44,5 +49,5 @@ func main() {
 	//section9.AnonymousFunc()
 	//section9.FuncExpression()
 	//section9.ReturningFun()
-	section9.Callbacks()
+	//section9.Callbacks()
 }
