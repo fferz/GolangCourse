@@ -4,7 +4,9 @@ import (
 	//"github.com/fferz/GolangCourse/pkg/pointers"
 	//section5 "github.com/fferz/GolangCourse/pkg/section-5"
 	//section6 "github.com/fferz/GolangCourse/pkg/section-6-control-flow"
-	section7 "github.com/fferz/GolangCourse/pkg/section-7-grouping-data"
+	//section7 "github.com/fferz/GolangCourse/pkg/section-7-grouping-data"
+	//section8 "github.com/fferz/GolangCourse/pkg/section-8-struct"
+	section9 "github.com/fferz/GolangCourse/pkg/section-9-functions"
 )
 
 func main() {
@@ -27,6 +29,20 @@ func main() {
 
 	//section7.Arrays()
 	//section7.Slices()
-	section7.Maps()
+	//section7.Maps()
 
+	// section 8
+	//section8.StructData()
+
+	// section 9
+	//section9.Syntax()
+	//section9.VariadicParam()
+	//section9.UnfurlingSlice()
+	//section9.Defer()
+	//section9.Methods()
+	//section9.InterfacesAndPolymorphism()
+	//section9.AnonymousFunc()
+	//section9.FuncExpression()
+	//section9.ReturningFun()
+	section9.Callbacks()
 }

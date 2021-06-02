@@ -57,6 +57,7 @@ var b hotdog
 b = 50
 
 a = b won't work, because those are different types
+// this is called type alias and it is not a good practise
 
 - conversion not casting
 
