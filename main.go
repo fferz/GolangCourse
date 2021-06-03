@@ -1,7 +1,7 @@
 package main
 
 import (
-	section7 "github.com/fferz/GolangCourse/pkg/section-7-grouping-data"
+	section8 "github.com/fferz/GolangCourse/pkg/section-8-struct"
 )
 
 func main() {
@@ -36,11 +36,14 @@ func main() {
 	//section7.Exercise4()
 	//section7.Exercise5()
 	//section7.Exercise6()
-	section7.Exercise7()
+	//section7.Exercise7()
 	//section7.Exercise8()
 
 	// section 8
 	//section8.StructData()
+	//section8.Exercise1()
+	//section8.Exercise2()
+	section8.Exercise3()
 
 	// section 9
 	//section9.Syntax()
