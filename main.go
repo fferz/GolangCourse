@@ -1,12 +1,7 @@
 package main
 
 import (
-	//"github.com/fferz/GolangCourse/pkg/pointers"
-	//section5 "github.com/fferz/GolangCourse/pkg/section-5"
-	//section6 "github.com/fferz/GolangCourse/pkg/section-6-control-flow"
-	//section7 "github.com/fferz/GolangCourse/pkg/section-7-grouping-data"
-	//section8 "github.com/fferz/GolangCourse/pkg/section-8-struct"
-	section6 "github.com/fferz/GolangCourse/pkg/section-6-control-flow"
+	section7 "github.com/fferz/GolangCourse/pkg/section-7-grouping-data"
 )
 
 func main() {
@@ -30,11 +25,19 @@ func main() {
 	//section6.Exercise4()
 	//section6.Exercise5()
 	//section6.Exercise6()
-	section6.Exercise7()
+	//section6.Exercise7()
 
 	//section7.Arrays()
 	//section7.Slices()
 	//section7.Maps()
+	//section7.Exercise1()
+	//section7.Exercise2()
+	//section7.Exercise3()
+	//section7.Exercise4()
+	//section7.Exercise5()
+	//section7.Exercise6()
+	section7.Exercise7()
+	//section7.Exercise8()
 
 	// section 8
 	//section8.StructData()

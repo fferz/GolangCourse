@@ -18,6 +18,7 @@ func Slices() {
 	// this is the way to construct values for strucs, arrays, slices and maps
 	// they create a new value each time they're evaluated
 	// slices allows us to group together values of the same type
+	// a := [5]int{0,1,2,3,4} // array of length 5
 	a := []int{1, 2, 3, 4}
 	fmt.Println(a)
 	fmt.Println("length", len(a))
@@ -109,5 +110,115 @@ func Maps() {
 		delete(m, "six")
 	} else {
 		fmt.Println("key does not exists", v)
+	}
+}
+
+func Exercise1() {
+	// create an array of 5 values
+	x := [5]int{}
+	x[0] = 0
+	x[1] = 1
+	x[2] = 2
+	x[3] = 3
+	x[4] = 4
+	for i, v := range x {
+		fmt.Printf("index: %v, value: %v \n", i, v)
+	}
+	fmt.Printf("array format: %T\n", x) // prints [5]int
+}
+
+func Exercise2() {
+	// create a slice with 10 values
+	x := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	for i, v := range x {
+		fmt.Printf("index: %v, value: %v \n", i, v)
+	}
+	fmt.Printf("%T\n", x) // prints []int
+}
+
+func Exercise3() {
+	y := []int{40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
+	y1 := y[2:7]
+	fmt.Println(y1)
+	y2 := y[7:]
+	fmt.Println(y2)
+	y3 := y[4:9]
+	fmt.Println(y3)
+	y4 := y[3:8]
+	fmt.Println(y4)
+}
+
+func Exercise4() {
+	z := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
+	z = append(z, 52)
+	fmt.Println(z)
+	z = append(z, 53, 54, 55)
+	fmt.Println(z)
+	a := []int{56, 57, 58, 59, 60}
+	z = append(z, a...)
+	fmt.Println(z)
+}
+
+func Exercise5() {
+	a := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
+	fmt.Println(a)
+	a1 := append(a[:3], a[6:]...)
+	fmt.Println(a1)
+}
+
+func Exercise6() {
+	a := []string{"cero", "uno", "dos", "tres"}
+	b := make([]string, 2, 4)
+	b = a
+	fmt.Println(b)
+	fmt.Println(len(b))
+	fmt.Println(cap(b))
+	for i := 0; i < len(b); i++ {
+		fmt.Printf("index: %v, value: %v \n", i, b[i])
+	}
+}
+
+func Exercise7() {
+	m := map[string][]string{
+		"fer":    {"cake", "cookies", "candies"},
+		"yo":     {"orange", "banana", "strawberry"},
+		"myself": {"pink", "yellow", "orange"},
+	}
+	m["her"] = []string{"pen", "pencil", "marker"}
+	for k, v := range m {
+		fmt.Printf("key: %v, value: %v \n", k, v)
+		for k1, v1 := range v {
+			fmt.Printf("key: %v, value: %v \n", k1, v1)
+		}
+	}
+	// delete if exists
+	if err, ok := m["her"]; ok {
+		fmt.Println("key exists, delete")
+		delete(m, "her")
+	} else {
+		fmt.Println("error:", err)
+	}
+
+}
+
+func Exercise8() {
+	a := []string{"one", "two", "three"}
+	b := []string{"pink", "yellow", "red"}
+	c := [][]string{a, b}
+	fmt.Println(c)
+	fmt.Printf("%T\n", c)
+	// with for
+	for i := 0; i < len(c); i++ {
+		fmt.Println("\nslice nro:", i)
+		for j := 0; j < len(c[i]); j++ {
+			fmt.Printf("\tindex: %v,  value: %v \n ", j, c[i][j])
+		}
+	}
+	// with range
+	for i, v := range c {
+		fmt.Println("\nrecord:", i)
+		for j, v1 := range v {
+			fmt.Printf("\tindex: %v, value: %v \n", j, v1)
+		}
 	}
 }
