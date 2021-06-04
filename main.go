@@ -1,7 +1,7 @@
 package main
 
 import (
-	section8 "github.com/fferz/GolangCourse/pkg/section-8-struct"
+	section9 "github.com/fferz/GolangCourse/pkg/section-9-functions"
 )
 
 func main() {
@@ -43,7 +43,7 @@ func main() {
 	//section8.StructData()
 	//section8.Exercise1()
 	//section8.Exercise2()
-	section8.Exercise3()
+	//section8.Exercise3()
 
 	// section 9
 	//section9.Syntax()
@@ -56,4 +56,13 @@ func main() {
 	//section9.FuncExpression()
 	//section9.ReturningFun()
 	//section9.Callbacks()
+	//section9.Exercise1()
+	//section9.Exercise2()
+	//section9.Exercise3()
+	//section9.Exercise4()
+	//section9.Exercise5()
+	//section9.Exercise6()
+	//section9.Exercise7()
+	//section9.Exercise8()
+	section9.Exercise9()
 }

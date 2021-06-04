@@ -1,6 +1,9 @@
 package section9
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func Syntax() {
 	// func (r receiver) identifier(parameters) (return(s)) { ... }
@@ -25,14 +28,14 @@ func buf(s string, s1 string) (string, bool) {
 // ---------------------------------------------------------------------
 
 func VariadicParam() {
-	// a function with an unlimited number of parameters
+	// a function with an unlimited number of parameters func a(x ...int){}
 	// the function manage the parameters as a slice
 	bubu(1, 2, 3, 4)
 }
 
 func bubu(x ...int) {
 	fmt.Println(x)
-	fmt.Printf("%T\n", x)
+	fmt.Printf("%T\n", x) // []int
 	sum := 0
 	for i := range x {
 		sum = sum + x[i]
@@ -285,3 +288,173 @@ func Recursion() {
 // a value can be of more than one type
 
 // funtions are first class citizens in Go
+
+func Exercise1() {
+	a := foo()
+	b, c := bar()
+	fmt.Println("function foo: ", a)
+	fmt.Println("funcion bar: ", b, c)
+}
+
+func foo() int {
+	return 12
+}
+
+func bar() (int, string) {
+	a := 13
+	b := "hello"
+	return a, b
+}
+
+func Exercise2() {
+	a := []int{2, 2, 2, 2}
+	aresult := foo3(a...)
+	fmt.Println(aresult)
+	bresult := bar3(a)
+	fmt.Println(bresult)
+
+}
+
+func foo3(x ...int) int {
+	sum := 0
+	for _, v := range x {
+		sum += v
+	}
+	return sum
+}
+
+func bar3(x []int) int {
+	sum := 0
+	for _, v := range x {
+		sum += v
+	}
+	return sum
+}
+
+func Exercise3() {
+	defer foo4()
+	bar4()
+	woo4()
+}
+
+func foo4() {
+	fmt.Println("function foo 1")
+}
+
+func bar4() {
+	fmt.Println("function bar 2")
+}
+
+func woo4() {
+	defer func() {
+		fmt.Println("function defered")
+	}()
+	fmt.Println("function woo")
+}
+
+type person2 struct {
+	first string
+	last  string
+	age   int
+}
+
+func (p person2) speakP() {
+	fmt.Printf("person name: %v, age: %v \n", p.first, p.age)
+}
+func Exercise4() {
+	p1 := person2{
+		first: "laila",
+		last:  "lopez",
+		age:   22,
+	}
+	p1.speakP()
+}
+
+type square struct {
+	side float32
+}
+type circle struct {
+	radius float32
+}
+
+func (s square) area() float32 {
+	return s.side * s.side
+}
+func (c circle) area() float32 {
+	return float32(c.radius) * float32(c.radius) * math.Pi
+}
+
+type shape interface {
+	area() float32
+}
+
+func info(s shape) float32 {
+	return s.area()
+}
+
+func Exercise5() {
+	s1 := square{
+		side: 12,
+	}
+	c1 := circle{
+		radius: 5,
+	}
+	fmt.Println(info(s1))
+	fmt.Println(info(c1))
+
+}
+
+func Exercise6() {
+	f := func(x int) int {
+		return x + 2
+	}(10)
+
+	fmt.Println(f)
+
+	func() {
+		fmt.Println("I'm an anonymous function")
+	}()
+}
+
+func Exercise7() {
+	f := func1()
+	fmt.Println(f())
+	fmt.Println(func1()())
+
+}
+
+func func1() func() int {
+	return func() int {
+		return 12
+	}
+}
+
+func Exercise8() {
+	a := func2(funcA, 5)
+	fmt.Println(a)
+}
+
+func funcA(x int) int {
+	return x * 10
+}
+
+func func2(f func(y int) int, x int) int {
+	result := f(x) + x
+	return result
+}
+
+func Exercise9() {
+	f := funcSuma()
+	fmt.Println(f())
+	fmt.Println(f())
+	fmt.Println(f())
+	fmt.Println(f())
+}
+
+func funcSuma() func() int {
+	x := 0
+	return func() int {
+		x++
+		return x
+	}
+}
