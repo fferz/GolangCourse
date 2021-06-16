@@ -1,0 +1,8 @@
+mode: set
+github.com/fferz/GolangCourse/pkg/section-16-testing/benchmark.go:5.23,7.2 1 0
+github.com/fferz/GolangCourse/pkg/section-16-testing/benchmark.go:9.32,11.2 1 1
+github.com/fferz/GolangCourse/pkg/section-16-testing/section16.go:29.17,32.2 2 0
+github.com/fferz/GolangCourse/pkg/section-16-testing/section16.go:35.26,37.22 2 1
+github.com/fferz/GolangCourse/pkg/section-16-testing/section16.go:40.2,40.12 1 1
+github.com/fferz/GolangCourse/pkg/section-16-testing/section16.go:37.22,39.3 1 1
+github.com/fferz/GolangCourse/pkg/section-16-testing/section16.go:45.21,49.2 1 0

@@ -1,6 +1,8 @@
 package pointers
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func HelloPointers() {
 	a := 12
@@ -29,4 +31,3 @@ func HelloPointers() {
 }
 
 // everything in go is passed by value
-

@@ -172,6 +172,7 @@ func humanfunc(h human) {
 
 func AnonymousFunc() {
 	// these functions has no identifier
+	// also called function literal
 	func() {
 		fmt.Println("I'm an anonymous function.")
 	}()

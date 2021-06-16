@@ -1,7 +1,7 @@
 package main
 
 import (
-	section9 "github.com/fferz/GolangCourse/pkg/section-9-functions"
+	section16 "github.com/fferz/GolangCourse/pkg/section-16-testing"
 )
 
 func main() {
@@ -64,5 +64,54 @@ func main() {
 	//section9.Exercise6()
 	//section9.Exercise7()
 	//section9.Exercise8()
-	section9.Exercise9()
+	//section9.Exercise9()
+
+	//section 11
+	//section11.JsonUnmarshal()
+	//section11.Sorting()
+	//section11.SortAdvanced()
+	//section11.Encripting()
+
+	// section 12
+	//section12.WaitGroup()
+	//section12.RaceCondition()
+	//section12.Exercise1()
+	//section12.Exercise2()
+	//section12.Exercise3()
+	//section12.Exercise4()
+	//section12.Exercise5()
+
+	// section 13
+	//section13.UsingChannels()
+	//section13.Range()
+	//section13.SelectStatement()
+	//section13.CommaOk()
+	//section13.FanIn()
+	//section13.Fanin2()
+	//section13.FanOut()
+	//section13.ContextIntro()
+	//section13.ContextExample()
+	//section13.Exercise1()
+	//section13.Exercise2()
+	//section13.Exercise3()
+	//section13.Exercise4()
+	//section13.Exercise5()
+	//section13.Exercise6()
+
+	//section14
+	//section14.ErrorIntro()
+	//section14.ScanExample()
+	//section14.ReaderExample()
+	//section14.ReaderExample2()
+	//section14.ErrorShow()
+	//section14.CreateLogFile()
+	//section14.MainRecover()
+	//section14.ErrorsWithInfo()
+	//section14.Exercise1()
+	//section14.Exercise2()
+	//section14.Exercise3()
+
+	// section 16
+	section16.Exercise2()
+
 }
